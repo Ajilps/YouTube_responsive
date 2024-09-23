@@ -1,14 +1,695 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TouTube.clone</title>
-    <link rel="stylesheet" type="text/stylesheet" href="styles/style.css">
+    <link rel="icon" href="svgs/whiteMode/favicon.ico" type="x-icon">
+    <title>YouTube-clone</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/media.css">
+
 </head>
-<body>
-    
+
+<body class="">
+    <!-- top nave bar -->
+    <nav class="navBar">
+        <section class="leftNave">
+            <div class="burgerIcon">
+                <button class="button"><img src="svgs/darkmode/burDark.svg" height="25px" alt="Burger icon"></button>
+            </div>
+            <div class="youtubeLogo">
+                <img src="svgs/whiteMode/ytlogo.svg" height="25px" alt="youtube logo">
+            </div>
+        </section>
+        <!-- left section end -->
+        <!-- middle section starts -->
+
+        <section class="middleNave">
+            <div class="search">
+                <input type="text" placeholder="Search.....">
+                <button class="searchButton button">
+                    <img src="svgs/darkmode/searchDark.svg" width="25px" alt="search button">
+                </button>
+                <div class="voiceSearchButton ">
+                    <button class="button">
+                        <img src="svgs/whiteMode/microphone-svgrepo-com (1).svg" alt="voice search">
+                    </button>
+                </div><!-- voice search button -->
+            </div>
+
+        </section>
+        <!-- middle section ends -->
+        <!-- right section -->
+        <section class="rightNave">
+            <div class="threeDot">
+                <button class="button">
+                    <img src="svgs/whiteMode/3dot.svg" height="25px" alt="options">
+                </button>
+            </div><!-- 3 dots icon -->
+            <div class="signIn">
+                <button class="signInButton button">
+                    <img src="svgs/whiteMode/sidemenu/sign-in.svg" height="25px" alt="">
+                    <span>Sign In</span>
+                </button>
+            </div><!-- sign in button -->
+        </section>
+        <section class="tabSearch">
+            <button class="button">
+                <img src="svgs/darkmode/searchDark.svg" width="25px" alt="search button">
+            </button>
+        </section>
+        <!-- right section ends -->
+
+    </nav>
+    <!-- nav bar bottom tab mode -->
+    <section class="naveBottom">
+        <div class="button">
+            <button class="button">
+                <img src="svgs/darkmode/sieBar/homeDark.svg" alt="home Button">
+            </button>
+            <span>Home</span>
+        </div>
+        <div class="button">
+            <button class="button">
+                <img src="svgs/darkmode/sieBar/short.svg" alt="shorts">
+            </button>
+            <span>Shorts</span>
+        </div>
+        <div class="button">
+            <button class="button">
+                <img src="svgs/darkmode/signInDark.svg" alt="you button">
+            </button>
+            <span> You</span>
+        </div>
+    </section><!-- tab nav ends -->
+
+
+    <side class="side-bar">
+        <section>
+            <div class="fullSide">
+                <div class="side-icones side-flex">
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/home.svg" alt="">
+                        Home</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/darkmode/sieBar/short.svg" alt="">
+                        Short</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/darkmode/sieBar/subscribe.svg" alt="">
+                        Subscriptions</button>
+                </div>
+                <div class="side-personal side-flex">
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/darkmode/sieBar/You.svg" alt="">
+                        You</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/darkmode/sieBar/History.svg" alt="">
+                        History</button>
+                </div>
+                <div class="side-signin " id="sigindev">
+                    <div id="signin-text">
+                        <p>Sign in to like videos, comment, and subscribe.</p>
+                    </div>
+                    <button class="signin-button side-sign-in-but" style="color: rgb(17, 30, 211);">
+                        <img class="side-logo-signin " src="svgs/darkmode/signInDark.svg" alt="">Sign in</button>
+                </div>
+                <div class="side-explore side-flex">
+                    <h3 class="side-sub-heading"> Explore</h3>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/Trending.svg" alt="trending svg">
+                        Tending</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/shoping.svg" alt="Shopping svg">
+                        Shopping</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/music.svg" alt="">
+                        Music</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/darkmode/sieBar/movied.svg" alt="">
+                        Movies</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/icons8-youtube-live.svg" alt="">
+                        Live</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/game_icon.svg" alt="">
+                        Gaming</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/news-icon.svg" alt="">
+                        News</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/sport_icon.svg" alt="">
+                        Sports</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/Courses.svg" alt="">
+                        Courses</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/Fashion.svg" alt="">
+                        Fashion & Beauty</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/podcast.svg" alt="">
+                        Podcast</button>
+                </div>
+                <div class="side-moreapps side-flex">
+                    <h3 class="side-sub-heading">More from YouTube</h3>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/Premium.svg" alt="">
+                        YouTube Premium</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/you_music.svg" alt="">
+                        YouTube Music</button>
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/you_kids.svg" alt="">
+                        YouTube Kids</button>
+                </div>
+                <div class="side-settings side-flex">
+                    <img src="" alt="">
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/you_settings.svg" alt="">
+                        Settings</button>
+                    <img src="" alt="">
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/historyicon.svg" alt="">
+                        Report history</button>
+                    <img src="" alt="">
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/You_help.svg" alt="">
+                        Help</button>
+                    <img src="" alt="">
+                    <button class="side-button">
+                        <img class="side-logo" src="svgs/whiteMode/sidemenu/You_feedback.svg" alt="">
+                        Send feedback</button>
+                </div>
+                <div class="side-footer side-flex">
+                    <span>About Press Copyright </span>
+                    <span>Contact us Creators</span>
+                    <span>Advertise Developers</span><br>
+                    <span>Term Privacy Policy & Safety</span>
+                    <span>How YouTube works</span>
+                    <span>Test new features</span><br>
+                    <span id="Copyright">© 2024 Google LLC</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="halfSide"><!-- Half size side bar -->
+            <div class="half-side-menu">
+                <div class="half-side-menu-items ">
+                    <img src="svgs/darkmode/sieBar/homeDark.svg" alt="">
+                    <span>Home</span>
+                </div>
+                <div class="half-side-menu-items ">
+                    <img src="svgs/darkmode/sieBar/short.svg" alt="">
+                    <span>Short</span>
+                </div>
+                <div class="half-side-menu-items">
+                    <img src="svgs/darkmode/sieBar/subscribe.svg" alt="">
+                    <span>Subscriptions</span>
+                </div>
+                <div class="half-side-menu-items">
+                    <img src="svgs/darkmode/sieBar/You.svg" alt="">
+                    <span>You</span>
+                </div>
+                <div class="half-side-menu-items">
+                    <img src="svgs/darkmode/sieBar/History.svg" alt="">
+                    <span>History</span>
+                </div>
+            </div>
+        </div>
+    </side>
+    <!-- side bar ent -->
+    <div class="scrollButton" id="left-slide">
+        <button class="button"><img src="" alt="">
+            &lt;</button>
+    </div>
+
+    <section class="suggestionBar"><!-- suggestion  -->
+
+        <div class="sugItems button" id="phone-menu-icon"><span><img src="svgs/whiteMode/3dot.svg" alt=""></span></div>
+        <div class="sugItems button"><span>All</span></div>
+        <div class="sugItems button"><span>All button</span></div>
+        <div class="sugItems button"><span>News</span></div>
+        <div class="sugItems button"><span>News</span></div>
+        <div class="sugItems button"><span>News</span></div>
+        <div class="sugItems button"><span>News</span></div>
+        <div class="sugItems button"><span>News</span></div>
+        <div class="sugItems button"><span>News</span></div>
+        <div class="sugItems button"><span>News</span></div>
+        <div class="sugItems button"><span>News</span></div>
+        <div class="sugItems button"><span>News</span></div>
+        <div class="sugItems button"><span>News</span></div>
+        <div class="sugItems button"><span>Games</span></div>
+        <div class="sugItems button"><span>Games</span></div>
+        <div class="sugItems button"><span>Games</span></div>
+        <div class="sugItems button"><span>Games</span></div>
+        <div class="sugItems button"><span>Games</span></div>
+
+        <div class="sugItems button"><span>Sports</span></div>
+        <div class="sugItems button"><span>Sports</span></div>
+        <div class="sugItems button"><span>Sports</span></div>
+
+        <div class="sugItems button"><span>1Sports</span></div>
+        <div class="sugItems button"><span>1Sports</span></div>
+        <div class="sugItems button"><span>1Sports</span></div>
+        <div class="sugItems button"><span>2Sports</span></div>
+        <div class="sugItems button"><span>3Sports</span></div>
+        <div class="sugItems button"><span>4Sports</span></div>
+        <div class="sugItems button"><span>5Sports</span></div>
+        <div class="sugItems button"><span>6Sports</span></div>
+    </section>
+
+    <div class="scrollButton-right" id="right-slide">
+        <button class="button"><img src="" alt="">
+            &gt;</button>
+    </div>
+
+
+
+    <main class="main">
+        <section class="contentBox">
+
+
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-2.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-1.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-3.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-2.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-4.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-4.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-5.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-6.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-1.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-1.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-5.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-3.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-4.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-6.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-6.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-4.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-6.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-4.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-5.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-3.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-6.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-3.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-3.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-1.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-2.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-1.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-2.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-1.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-3.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-1.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-3.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-1.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-3.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-1.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+            <!-- single vide tab start -->
+            <div class="singleTab">
+
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/thumbnails/thumbnail-3.webp" alt="thumbnail">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="images/channelicon/channel-1.jpeg" alt="channel icon">
+
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+
+                </div>
+            </div> <!-- single vide tab end -->
+
+        </section>
+    </main>
 
     <script src="script/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial;
+    --bg-color: black;
+    --text-color: white;
+
+}
+
+
+
+body {
+    margin-bottom: 10px;
+}
+
+.navBar>* {
+    display: flex;
+}
+
+
+.navBar {
+    position: fixed;
+    top: 1px;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+/* left section */
+.leftNave {
+    max-width: 30%;
+    display: flex;
+
+}
+
+.leftNave>div {
+    margin-left: 10px;
+
+}
+
+.burgerIcon button {
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+
+}
+
+.burgerIcon button img {
+    padding: 1px;
+    margin: 3px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(225, 230, 230, 0.74);
+    background: linear-gradient(to left, rgba(230, 225, 225, 0.925) rgba(255, 255, 255, 100%));
+    backdrop-filter: blur(6px);
+}
+
+
+
+/* mid */
+
+
+.middleNave {
+    height: 90%;
+    flex-grow: 1;
+    min-width: none;
+    justify-content: center
+}
+
+.search {
+
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.search input {
+    width: 90%;
+    min-width: none;
+    height: 100%;
+    padding-left: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid gray;
+    border-right: none;
+}
+
+.search input:active {
+    border: transparent;
+    border-style: none;
+
+}
+
+.searchButton {
+    height: 100%;
+    width: 40px;
+    border: 1px solid gray;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: 15px;
+
+}
+
+.searchButton img {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    padding-left: -1;
+}
+
+.voiceSearchButton button {
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.voiceSearchButton img {
+    height: 25px;
+    width: 30px;
+    margin: 2px;
+}
+
+/* right */
+.rightNave {
+    height: 100%;
+    margin-right: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.threeDot {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.threeDot button {
+    border-radius: 10px;
+
+}
+
+.signInButton {
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid rgba(228, 219, 219, 0.452);
+}
+
+/* phone-menu-icon */
+#phone-menu-icon {
+    display: none;
+
+}
+
+/* suggestion bar  */
+.suggestionBar {
+    position: fixed;
+    z-index: 2;
+    width: 100dvw;
+    display: flex;
+    top: 50px;
+    height: 40px;
+    padding: 2px 40px;
+    margin-left: 5px;
+    padding-right: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 300;
+    font-size: .9rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.sugItems {
+    border-radius: 5px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.sugItems span {
+    text-wrap: nowrap;
+    padding: 5px;
+}
+
+.scrollButton {
+    position: fixed;
+    top: 50px;
+    width: 35px;
+    height: 40px;
+    z-index: 3;
+
+}
+
+.scrollButton-right {
+    height: 40px;
+    width: 35px;
+    position: fixed;
+    z-index: 3;
+    top: 50px;
+    right: 0;
+
+}
+
+.scrollButton button,
+.scrollButton-right button {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.014);
+    background: linear-gradient(to left, rgba(230, 225, 225, 0.925) rgba(255, 255, 255, 100%));
+    backdrop-filter: blur(6px);
+    border: none;
+    border-radius: 5px;
+}
+
+/* bottom nav bar */
+.naveBottom {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid gray;
+    background-color: aliceblue;
+}
+
+.naveBottom div {
+
+    height: 90%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}

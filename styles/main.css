@@ -1,0 +1,105 @@
+.main {
+    background-color: rgb(182, 235, 235);
+}
+
+.contentBox {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    z-index: 0;
+    top: 90px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 0px;
+    justify-items: center;
+
+}
+
+.singleTab {
+
+    max-width: 400px;
+    min-width: 250px;
+
+    background-color: rgba(255, 255, 255, 0.986);
+    margin: 10px 0px;
+    margin-left: 5%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+/* video single tab  */
+
+
+
+.singleTab {
+
+    flex-shrink: 0;
+    max-width: 400px;
+    min-width: 250px;
+
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.video-title {
+    margin-top: 0;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.video-title:hover {
+    background-color: rgb(245, 235, 235);
+    border-radius: 6px;
+}
+
+.video-author,
+.video-stats {
+    font-size: .8rem;
+    color: rgb(96, 96, 96);
+
+}
+
+.video-author {
+    margin-top: 4px;
+}
+
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+    width: 40px;
+
+    border-radius: 50%;
+}
+
+.thumbnail-row {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.video-time {
+    font-family: Roboto, Arial;
+    font-size: 1rem;
+    font-weight: 500px;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    background-color: black;
+    color: white;
+    z-index: 3;
+}
