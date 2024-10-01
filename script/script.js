@@ -23,3 +23,17 @@ rightSlide.addEventListener("click",(evt) =>{
 
 
 
+let menuIcon = document.getElementById("phone-menu-icon");
+
+let sidemMenu = document.querySelector("#fullSideBar");
+let Menu = document.querySelector(".side-bar");
+let body = document.querySelector("main","nav");
+
+menuIcon.addEventListener("click",(event)=>{
+sidemMenu.style.display = "block"
+Menu.style.display = "block"
+});
+body.addEventListener("click",(eve)=>{
+    sidemMenu.style.display = "none";
+Menu.style.display = "none";
+})
